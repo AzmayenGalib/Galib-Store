@@ -1,0 +1,240 @@
+.LoginSignUpContainer {
+    width: 100vw;
+      height: 90vh;  
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 5rem ; */
+     align-items: center;  
+      /* avabe flex use kore amra khub sohoze kono div k screen er 
+  aakdom center a ante pari height borabor center and width
+  borabor center and ai way ta akdom responsive */
+    background-color: rgb(231, 231, 231);
+    /* position: fixed; */
+    /* header foooter hide korar buddhi hossa avabe position 
+    fixxed kore daua  */
+    /* top: 0%; */
+   /*  left: 0; */
+    background-image: url("../img/dash1.svg");
+     background-size: cover; 
+   background-position: center;
+  background-repeat: no-repeat; 
+  }
+
+  .LoginSignUpBox {
+    
+    width: 40vmax;
+    height:50vmax ;
+    box-sizing: border-box;
+    overflow: hidden;
+    /*  overflow: hidden; dile zai element gula box er bahire 
+    chole zabe sai element gulak dakha zabena */
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    border-top: 0.2rem solid rgba(255, 255, 255, 0.5);
+    border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.5rem);
+  }
+
+  .login_signUp_toggle {
+    display: flex;
+    height: 3vmax;
+  }
+
+  .login_signUp_toggle > p {
+    color:white;
+    font: 300 1vmax "Roboto";
+    transition: all 0.5s;
+    cursor: pointer;
+    display: grid; 
+    /* zai element k center korte hobe amra sai element a display 
+    grid use korau center korte pari parent element a kono flex use 
+    na kore.ar akhane duita child zano soman zayga nite pare
+    sai zonno grid use kora hoisa
+      */
+     place-items: center;
+    width: 100%;
+  }
+
+  .LoginSignUpBox > div > button {
+    background-color: tomato;
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+    /* class change holau ai transition effect ta kaz kore */
+  }
+
+  .loginForm,
+.signUpForm {
+    /* amra aivabe akadhik class a same style dite pari */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 70%;
+  transition: all 0.5s;
+}
+
+
+.signUpForm {
+    transform: translateY(-100%) translateX(-100vmax);
+  }
+  
+  .loginForm > div,
+  .signUpForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .loginForm > div > input,
+  .signUpForm > div > input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+  }
+  
+  .loginForm > div > svg,
+.signUpForm > div > svg {
+   position: absolute; 
+   /* position: absolute; dauar karon holo absolute dile
+   porer element ta tar zaygay ashte parbe avabe korle 
+   responsive hoy*/
+   transform: translateX(1vmax);  
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.loginForm > a {
+    color: white;
+    text-decoration: none;
+    align-self: flex-end;
+    transition: all 0.5s;
+    font: 500 1.2vmax "Gill Sans";
+  }
+  
+  .loginForm > a:hover {
+    color: white;
+  }
+
+  .loginBtn,
+.signUpBtn {
+  border: none;
+  background-color: tomato;
+  color: white;
+  font: 300 0.9vmax "Roboto";
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.loginBtn:hover,
+.signUpBtn:hover {
+  background-color: rgb(179, 66, 46);
+}
+
+.shiftToLeft {
+    transform: translateX(-100%);
+    /* smoothly position change korar zonno  translateX(-100%);
+    use kora hoisa */
+  }
+  .shiftToNeutral {
+    transform: translateX(0%);
+  }
+  
+  .shiftToNeutralForm {
+    transform: translateX(0%) translateY(-100%);
+  }
+  
+  .shiftToRight {
+    transform: translateX(100%);
+  }
+
+  #registerImage > img {
+    width: 3vmax;
+    border-radius: 100%;
+  }
+  #registerImage > input {
+    display: flex;
+    padding: 0%;
+  }
+  #registerImage > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 3;
+     height: 5vh; 
+    border: none;
+    margin: 0%;
+    font: 500 1vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax; 
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  } 
+
+  @media screen and (max-width: 600px) {
+    .LoginSignUpContainer {
+      background-color: white;
+     
+    }
+    .LoginSignUpBox {
+      width: 100vw;
+      height: 90rem;
+    }
+    .login_signUp_toggle {
+      height: 5vmax;
+    }
+    .login_signUp_toggle > p {
+      font: 300 1.5vmax "Roboto";
+    }
+  
+    .loginForm,
+    .signUpForm {
+      padding: 5vmax;
+    }
+  
+    .loginForm > div > input,
+    .signUpForm > div > input {
+      padding: 2.5vmax 5vmax;
+      font: 300 1.7vmax cursive;
+    }
+  
+    .loginForm > div > svg,
+    .signUpForm > div > svg {
+      font-size: 2.8vmax;
+    }
+  
+    .loginForm > a {
+      font: 500 1.8vmax "Gill Sans";
+    }
+  
+    #registerImage > img {
+      width: 8vmax;
+      border-radius: 100%;
+    }
+  
+    #registerImage > input::file-selector-button {
+      height: 7vh;
+      font: 400 1.8vmax cursive;
+    }
+  
+    .loginBtn,
+    .signUpBtn {
+      font: 300 1.9vmax "Roboto";
+      padding: 1.8vmax;
+    }
+  }
+  

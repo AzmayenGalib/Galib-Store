@@ -1,0 +1,205 @@
+.ProductDetails {
+  width: 100vw;
+  max-width: 100%;
+  padding: 6vmax;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.ProductDetails > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+.ProductDetails > div:last-child {
+  align-items: flex-start;
+}
+
+.CarouselImage {
+  width: 20vmax;
+}
+
+.detailsBlock-1 > h2 {
+  color: rgb(54, 54, 54);
+
+  font: 600 1.6vmax "Montserrat";
+}
+
+.detailsBlock-1 > p {
+  color: rgba(54, 54, 54, 0.582);
+  font: 200 1.3vmax "Open_Sans";
+}
+
+.detailsBlock-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  width: 70%;
+  padding: 1vmax 0;
+}
+
+.detailsBlock-2-span {
+  font: 200 0.8vmax cursive;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.detailsBlock-3 {
+  width: 70%;
+}
+
+.detailsBlock-3 > h1 {
+  color: rgba(17, 17, 17, 0.795);
+  font: 650 1.8vmax "Montserrat";
+  margin: 1vmax 0;
+}
+
+.detailsBlock-3-1 {
+  display: flex;
+  align-items: center;
+}
+
+.detailsBlock-3-1-1 > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 0.5vmax;
+  color: white;
+  transition: all 0.5;
+  cursor: pointer;
+}
+
+.detailsBlock-3-1-1 > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.detailsBlock-3-1-1 > input {
+  border: none;
+  padding: 0.5vmax;
+  width: 1vmax;
+  text-align: center;
+  outline: none;
+  font: 400 0.8vmax;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.redColor {
+  color: red;
+}
+
+.greenColor {
+  color: green;
+}
+
+.detailsBlock-3-1 > button:last-child {
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5;
+  background-color: tomato;
+
+  font: 500 0.7vmax "Montserrat";
+  border-radius: 20px;
+  padding: 0.8vmax 2vmax;
+  margin: 1vmax;
+  outline: none;
+}
+/* class er modda akadhik same element thakle avabe amra nirdristo
+akta k style dita pari */
+
+.detailsBlock-3 > p {
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  padding: 1vmax 0;
+  color: rgba(0, 0, 0, 0.651);
+  margin: 1vmax 0;
+}
+
+.detailsBlock-4 {
+  color: rgba(0, 0, 0, 0.897);
+  font: 500 1.5vmax "Montserrat";
+}
+
+.detailsBlock-4 > p {
+  color: rgba(0, 0, 0, 0.534);
+  font: 300 1.3vmax "Open_Sans";
+}
+
+.submitReview {
+  border: none;
+  background-color: tomato;
+  padding: 0.6vmax 2vmax;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  font: 500 1vmax "Montserrat";
+  border-radius: 20px;
+  margin: 1vmax 0;
+  outline: none;
+}
+
+.submitReview:hover {
+  background-color: rgb(179, 68, 45);
+  transform: scale(1.1);
+}
+
+.reviewsHeading{
+  color: #000000be;
+  font: 500 1.4vmax "Montserrat";
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226) ;
+  padding: 1vmax;
+  width: 20vmax;
+  margin: auto;
+  margin-bottom: 4vmax;
+}
+
+.reviews{
+  display: flex;
+  overflow: auto;
+}
+/* ata dila aita facebook er story card er er moto hobe
+ */
+
+.noReviews{
+  font: 400 1.4vmax "Montserrat";
+  text-align: center;
+  color:rgba(0, 0, 0, 0.548) ;
+}
+
+@media screen and (max-width: 600px) {
+  .ProductDetails {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .ProductDetails > div:last-child {
+    align-items: center;
+  }
+
+  .detailsBlock-1 > h2 {
+    font-size: 2.4vmax;
+
+   text-align: center;
+  }
+
+  .detailsBlock-1 > p {
+    font-size: 1vmax;
+
+   text-align: center;
+  }
+
+  .detailsBlock-2  {
+    justify-content: center;
+  }
+
+  .detailsBlock-2 > span   {
+    font-size: 1.5vmax;
+  }
+}

@@ -1,0 +1,99 @@
+.productCard{
+    width: 14vmax;
+      /*  height: 20vmax;  */ 
+    display: flex;
+    flex-direction: column; 
+    text-decoration: none;
+    color: rgba(48, 48, 48);
+     margin: 1vmax; 
+     padding-bottom: 0.5vmax; 
+    transition: all 0.5s;
+    background-color: white;
+     padding: 0.5rem; 
+    /*  box-sizing:content-box; */ 
+    /*  flex-wrap: wrap; */
+     overflow: hidden;
+}
+
+.productCard >img {
+    width: 6rem;
+     height: 6.5rem; 
+    box-sizing:border-box; 
+   /*  flex: 1 1 auto; */
+      margin: 0 auto; 
+}
+
+.productCard >div{
+     margin: 3%; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing:border-box; 
+  /*   flex: 1 1 auto; */
+}
+
+.productCard > div>svg{
+    box-sizing:border-box; 
+    flex: 1 1 auto;
+}
+
+.productCardSpan{
+    margin: 2%;
+    font:  300 70%  "Open_Sans";
+    /* font: weight size font-family */
+    /* font amra avabe short cut use korbo */
+    box-sizing:border-box; 
+    /* flex: 1 1 auto; */
+}
+
+.productCard  >p{
+    font-family: "Montserrat";
+    font-size:80%; 
+    margin: 5%; 
+    margin-bottom: 0;
+    /* box-sizing:border-box; */ 
+    /* flex: 1 1 auto; */
+}
+
+.productCard > span{
+    margin: 3%; 
+    color: tomato;
+    font-family: "Open_Sans" ;
+    box-sizing:border-box; 
+    /* flex: 1 1 auto; */
+}
+
+.productCard:hover{
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    transform: translateY(-1vmax);
+    /* box-sizing:border-box;  */
+    /* flex: 1 1 auto; */
+}
+.pname{
+    background-color: brown;
+    height: 1rem;
+    width: 1rem;
+}
+
+
+
+@media (max-width: 700px) {
+  
+    .productCard{
+        width: 15vmax;
+          /*  height: 20vmax;  */ 
+        display: flex;
+        flex-direction: column; 
+        text-decoration: none;
+        color: rgba(48, 48, 48);
+         margin: 1vmax; 
+         padding-bottom: 0.5vmax; 
+        transition: all 0.5s;
+        background-color: white;
+         padding: 0.5rem; 
+        /*  box-sizing:content-box; */ 
+        /*  flex-wrap: wrap; */
+         overflow: hidden;
+    }
+  
+  }

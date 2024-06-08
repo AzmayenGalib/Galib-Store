@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./component/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("./component/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+p {
+  font-family: OpenSans;
+}
+
+h1 {
+  font-family: Montserrat;
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  scroll-behavior: smooth;
+  /* scroll behaviour smoth dile link a chap dile smoothly
+    scroll hoye link a chole zabe */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.greenColor {
+  color: green !important;
+}
+
+.redColor {
+  color: red !important;
+}
+
+/* @media (max-width: 1230px) {
+  html {
+    font-size: 90%;
+  }
+} */
+
+/* @media (max-width: 1170px) {
+  html {
+    font-size: 80%;
+  }
+} */
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 90%;
+  }
+} 
+
+@media (max-width: 1065px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 1025px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 845px) {
+  html {
+    font-size: 68%;
+  }
+}
+@media (max-width: 822px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media (max-width: 790px) {
+  html {
+    font-size: 63%;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+

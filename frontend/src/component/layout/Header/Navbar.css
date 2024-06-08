@@ -1,0 +1,47 @@
+
+
+
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-family: Montserrat;
+   margin: 0 1vmax; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+nav {
+   width: 15%; 
+   padding-left: 0rem;
+}
+
+
+@media (max-width: 740px) {
+  
+  .link {
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+     margin: 0 1vmax; 
+     font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 500px) {
+  
+  .link {
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+     margin: 0 1vmax; 
+     font-size: 1.5rem;
+  }
+
+}

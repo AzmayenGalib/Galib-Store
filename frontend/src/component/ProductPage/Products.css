@@ -1,0 +1,121 @@
+.productHeading{
+    margin: 2vmax auto;
+    width: 15vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 2vmax;
+    color:rgba(0, 0, 0, 0.678) ;
+    font: 500 1.5vmax ;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 7vmax;
+    padding-left: 20vmax;
+    justify-content: center;
+    min-height: 3rem;
+}
+
+
+.productContain{
+  min-height: 30rem;
+}
+
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 6vmax ;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+/* pagination class ta by default daua thake */
+.page-item{
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    border: 1px solid rgba(0,0 , 0,0.178 );
+    padding: 1vmax 1.5vmax;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.page-link{
+    text-decoration: none;
+    color:rgb(80, 80, 80) ; 
+}
+
+.page-item:hover{
+    background-color: rgb(230, 230, 230);
+  
+}
+
+.pageItemActive{
+    background-color: tomato;
+}
+
+.pageLinkActive{
+    color: white;
+}
+
+.filterBox{
+    width: 10vmax;
+    position: absolute;
+    top:15vmax;
+    left:4vmax;
+}
+
+.categoryBox{
+    padding: 0%;
+    
+    
+}
+
+.category-link {
+    list-style: none;
+    color: rgba(0, 0, 0, 0.61);
+    font: 400 1vmax "Montserrat";
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .category-link:hover {
+    color: tomato;
+  }
+
+  .filterBox > fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    padding: 5px;
+  }
+
+  .margin{
+    margin-bottom: 30px;
+  }
+
+@media screen and (max-width: 700px) {
+    .filterBox {
+      width: 20vmax;
+      position: static;
+      margin: auto;
+      margin-top: 1rem;
+    }
+  
+    .page-link {
+      font: 300 1.7vmax "Roboto";
+    }
+    .category-link {
+      font: 400 1.8vmax "Roboto";
+    }
+    .products{
+      display: flex;
+      flex-wrap: wrap;
+       padding: 0 1vmax; 
+     /*  padding-left: ; */
+      justify-content: center;
+  }
+  }
+  

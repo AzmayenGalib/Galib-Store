@@ -1,0 +1,168 @@
+.head {
+  /*  width: 100%; */
+  background-color: #232f3f;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+
+  padding-left: 2rem;
+}
+
+.logo {
+  color: white;
+  width: 13%;
+  padding-left: 2rem;
+  /* margin-right: 4rem; */
+}
+
+.speedDial {
+  position: fixed;
+  right: 2rem;
+  top: 1rem;
+  /* height:  3.5rem;
+    width:  3.5rem; */
+}
+
+.speedDialIcon {
+  width: 55px /* 3.5rem */;
+  height: 55px;
+  border-radius: 100%;
+}
+
+.Uhead {
+  background-color: #121921;
+  /*   height: 2rem;  */
+  display: flex;
+  align-items: center;
+
+  padding-left: 3rem;
+  padding: 0.5rem;
+}
+
+.ico {
+  list-style: none;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.ico > li {
+  margin: 0 1vmax;
+  display: "inline";
+}
+
+.Hsearch {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.275);
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.637);
+  padding: 1rem;
+  width: 25rem;
+  outline: none;
+  border-radius: 0%;
+  box-sizing: border-box;
+  height: 2.2rem;
+  /* margin: 0 2rem; */
+}
+
+.HsearchBTN {
+  height: 2.2rem;
+  border-radius: 0%;
+  border-radius: 0%;
+  background-color: tomato;
+  padding: 0.3rem;
+  /* width: 7%; */
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  /*  position: absolute;  */
+  /* position: absolute; dauar karon holo absolute dile
+    porer element ta tar zaygay ashte parbe avabe korle 
+    responsive hoy*/
+  /*  transform: translateX(-7rem); */
+  border: none;
+}
+
+.Hp {
+  color: rgba(250, 108, 14, 0.637);
+  display: inline-block;
+}
+
+ul > li > svg > {
+  display: inline-block;
+  /*   margin: 0;
+  padding: 0; */
+}
+
+.inline {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* color: white; */
+}
+
+ul > li > p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.inline > h5 {
+  color: #7c7d7e;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.inline > h3 {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 740px) {
+  .ico {
+    display: none;
+  }
+
+  .head {
+    /*  width: 100%; */
+    background-color: #232f3f;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+
+    padding: 2rem auto;
+  }
+  .Uhead {
+    background-color: #121921;
+    /*   height: 2rem;  */
+    display: flex;
+    align-items: center;
+
+    
+    padding: 1.5rem;
+  }
+
+  .logo {
+    color: white;
+    width: 20%;
+    padding: 1rem;
+    font-size: 2rem;
+    /* margin-right: 4rem; */
+  }
+  .Hsearch {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.275);
+    background-color: white;
+    border: none;
+    color: rgba(0, 0, 0, 0.637);
+    padding: 1rem;
+    width: 15rem;
+    outline: none;
+    border-radius: 0%;
+    box-sizing: border-box;
+    height: 2.2rem;
+    /* margin: 0 2rem; */
+  }
+}

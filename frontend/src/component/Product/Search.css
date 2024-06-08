@@ -1,0 +1,59 @@
+.searchBox{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   justify-content: center;align-items: center; ai duita
+    dile parent soho sob child center a chole ashbe */
+    background-color: rgb(231, 231, 231);
+    position: fixed;
+    top: 0%;
+    left: 0;
+    /*  position: fixed;
+    top: 0%;
+    left: 0; eta dile page searchbox sara onno kisu zmn header footer
+    agula kisui show hobena  */
+}
+
+.searchBox > input {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.275);
+    background-color: white;
+    border: none;
+    color: rgba(0, 0, 0, 0.637);
+    padding: 1vmax 2vmax;
+    width: 50%;
+    outline: none;
+    border-radius: 0%;
+    box-sizing: border-box;
+    height :8%;
+}
+
+.searchBox > input[type="submit"] {
+    height :8%;
+    border-radius: 0%;
+    border-radius: 0%;
+    background-color: tomato;
+    padding: 1vmax;
+    width: 10%;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+/* avabe amra akadhik same element thakle tader zakono attribute
+diye taderk sellect korte pari */
+
+@media screen and (max-width: 600px) {
+    .searchBox > input[type="text"] {
+      width: 100%;
+      font: 300 4vw cursive;
+      height: 10%;
+    }
+  
+    .searchBox > input[type="submit"] {
+      height: 10%;
+      width: 30%;
+      font: 300 4vw "Roboto";
+    }
+  }

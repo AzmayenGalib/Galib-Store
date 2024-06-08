@@ -1,0 +1,85 @@
+  .homeHeading{
+    font-family: Montserrat;
+    text-align: center;
+    border-bottom: 1px solid rgb(85, 85, 85);
+     width: 25vmax; 
+    margin: 1vmax auto;
+    margin-top: 13rem;
+    /* margin auto dile center a chole ashe */
+         font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+    padding-bottom: 0.3rem;
+}  
+
+.container{
+    display: flex;
+     margin: 2vmax auto; 
+    /* width: 80vmax; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.background{
+   background-color: #e2e6e7;
+}
+
+.spc{
+  height: 4rem;
+}
+.pop{
+  display: flex;
+  margin: 1vmax auto;
+   width:100% ; 
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  transform: translateY(-13rem);
+  transition: all 0.5s;
+ /*  padding: 2rem auto; */
+ /*  transform: translateX(7rem); */
+}
+.popItem{
+   width: 14rem; 
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgba(48, 48, 48);
+  margin: 1vmax;
+ /*  padding-bottom: 0.5vmax; */
+  transition: all 0.5s;
+  background-color: white;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+
+.popItem>h5{
+  color: rgb(61, 136, 235);
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+
+
+@media (max-width: 700px) {
+  .pop{
+    display: none;
+ 
+  }
+  
+
+  .homeHeading{
+    font-family: Montserrat;
+    text-align: center;
+    border-bottom: 1px solid rgb(85, 85, 85);
+     width: 25vmax; 
+    margin: 2vmax auto;
+    
+    /* margin auto dile center a chole ashe */
+         font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+    padding-bottom: 0.3rem;
+}  
+
+}
